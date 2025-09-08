@@ -41,8 +41,10 @@ def find_duplicate4(arr: list):
 
 
 if __name__ == "__main__":
-    result_check_data = [{'params': {'arr':[1, 2, 3, 3]}, 'result': True}, {
-        'params': {'arr':[1, 2, 3, 4]}, 'result': False}]
+    result_check_data = [
+        {'params': {'arr': [1, 2, 3, 3]}, 'result': True},
+        {'params': {'arr': [1, 2, 3, 4]}, 'result': False}
+    ]
 
     testobj = TestResult(result_check_data)
     testobj.test_all_scenarios(find_duplicate1)
